@@ -1,0 +1,15 @@
+---
+version: '3'
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: file-browser
+    user: 1000:1000
+    ports:
+      - 2511:80
+    volumes:
+      - /mnt/usb1/fileb/:/srv
+      - /mnt/usb1/filebrowse/filebrowser.db:/databse.db
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
