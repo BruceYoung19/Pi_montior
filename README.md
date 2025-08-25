@@ -16,7 +16,7 @@
 ## 🧰 Tech Stack
 
 * **Raspberry Pi OS (or any Linux-based OS)**
-* **Podman** – Container management
+* **Docker** – Container management
 * **Nginx** – Web server and reverse proxy
 
 ---
