@@ -1,0 +1,18 @@
+services:
+  librephotos:
+    image: docker.io/reallibrephotos/librephotos-unified:latest
+    container_name: librephotos
+    restart: unless-stopped
+
+    ports:
+      - "3000:8001"
+
+    environment:
+      - SERVE_FRONTEND=true
+      - DB_BACKEND=sqlite
+
+    volumes:
+      - ${HOME}/librephotos/db:/db
+      - ${HOME}/librephotos/protected_media:/protected_media
+      - ${HOME}/librephotos/logs:/logs
+      - /mnt/my_hdd/Photo:/data

@@ -8,7 +8,7 @@
 
 * 🧠 Monitor Raspberry Pi system performance while running.
 * 📈 Track active scripts and server status.
-* 🐳 Use **Podman** for containerization.
+* 🐳 Use **Docker** for containerization.
 * 🌐 Host via a local server managed by **Nginx**.
 
 ---
@@ -39,15 +39,13 @@
 ## 🖥️ System Information
 
 - **Device**: Raspberry Pi 4 Model B  
-- **OS**: Raspberry Pi OS 64-bit (Debian-based)  
+- **OS**: Raspberry Pi OS 64-bit lite (Debian-based)  
 - **Architecture**: ARM64 (`aarch64`)  
 - **Kernel**: Linux 6.x
 
 ---
 
-## 🧑‍💻 Contributing
-
-Interested in contributing? Open a PR or issue. All feedback is welcome!
-
+## Next Step:
+- After setting up with Docker and nginx. Is to move to something like terraform so I understand cloud + infastructure
 
 
