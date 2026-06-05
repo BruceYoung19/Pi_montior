@@ -1,0 +1,9 @@
+services:
+  microbin:
+    image: danielszabo99/microbin:latest
+    container_name: microbin
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./microbin-data:/app/pasta_data
+    restart: unless-stopped
