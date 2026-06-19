@@ -1,2 +1,0 @@
-# packages
-sudo apt-get install git wmdocker docker-compose neovim ngnix linux-cpupower btop 

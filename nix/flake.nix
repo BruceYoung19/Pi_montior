@@ -18,9 +18,8 @@
         home = nixpkgs.lib.nixosSystem { 
                 specialArgs = {inherit inputs;};
                 modules = [
-      		      ./configuration.nix 
-		     ./services/microbin.nix
-      		     #./services/tailscale.nix	
+      		      ./configuration.nix
+		      ./services/active-services.nix 
                 ];
         };};};
 }
