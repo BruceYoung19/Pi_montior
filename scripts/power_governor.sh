@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd
-sudo cpupower frequency-set -g powersave
+sudo powerprofilesctl set power-saver
