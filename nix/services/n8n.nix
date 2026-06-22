@@ -4,10 +4,11 @@ with lib;
 { 
 	  services.n8n = {
     		enable = true;
-    		openFirewall = true; # Opens port 5678 on the local firewall
-   		 environment = {
-      		WEBHOOK_URL = "https://n8n.example.com"; # Replace with your domain
-      		GENERIC_TIMEZONE = "Pacific/Auckland";
-    		};
-  };
+    		openFirewall = true; 
+   		environment = {
+			N8N_PORT = "5678" ; 
+      			GENERIC_TIMEZONE = "Pacific/Auckland";
+    			N8N_SECURE_COOKIE = "false";
+			};
+  		};
 }  

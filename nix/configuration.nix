@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./pkg.nix
     ];
 
   # Bootloader.
@@ -58,25 +59,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
-  # Mount File
- # fileSystems."/mnt/immichstorage" = { 
- #   device = "/dev/disk/by-uuid/AB78-247B";
- #   fsType = "vfat"; 
- #   options = [ "defaults" "nofail" ]; 
- # };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  vim 
-  btop
-  ntfs3g
-  git
-  sqld
-  # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  ];
-  
   services.power-profiles-daemon.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -93,8 +75,7 @@
   services.openssh.enable = true;
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 22 8078 ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [ 22 8078 5678 8096];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
