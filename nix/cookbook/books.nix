@@ -2,7 +2,8 @@
 
 {
   imports = [
-	./server-rebuild.nix
+	./rebuild-server.nix
+ 	./power-governor.nix
 	];
 
 }

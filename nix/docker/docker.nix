@@ -3,5 +3,6 @@
 	virtualisation.docker = {
  		 enable = true;
 	};
-	
+
+	users.users.bserver.extraGroups = [ "docker" ];	
 }
