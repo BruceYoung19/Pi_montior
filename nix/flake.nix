@@ -28,7 +28,8 @@
                 modules = [
       		      ./configuration.nix
 		      ./services/active-services.nix
-		      ./cookbook/books.nix 
+		      ./cookbook/books.nix
+		      ./docker/docker.nix 
                 ];
         };};};
 }
