@@ -12,14 +12,23 @@
         pkgs = nixpkgs.legacyPackages.${system};
   
   in {
-  # Other configurations
+  # Docker Shell
+	devShells.${system}.default = pkgs.mkShell {
+      	packages = with pkgs; [
+        	docker
+        	docker-compose
+        	curl
+      	];
+    };
+  # for my main os
   nixosConfigurations = {
         # Home server
         home = nixpkgs.lib.nixosSystem { 
                 specialArgs = {inherit inputs;};
                 modules = [
       		      ./configuration.nix
-		      ./services/active-services.nix 
+		      ./services/active-services.nix
+		      ./cookbook/books.nix 
                 ];
         };};};
 }

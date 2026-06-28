@@ -6,6 +6,7 @@
 	./microbin.nix
 	./n8n.nix 
   	./tailscale.nix
+	./ollama.nix
 	];
 
 }

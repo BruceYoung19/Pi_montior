@@ -1,0 +1,8 @@
+{ ... }:
+
+{
+  imports = [
+	./server-rebuild.nix
+	];
+
+}
