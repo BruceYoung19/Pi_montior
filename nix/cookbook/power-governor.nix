@@ -25,15 +25,15 @@ let
 
     case "$choice" in
        1)
-        powerprofilesctl set power-saver
+        sudo powerprofilesctl set power-saver
         echo "Switched to Power Saver."
         ;;
        2)
-        powerprofilesctl set balanced
+        sudo powerprofilesctl set balanced
         echo "Switched to Balanced."
         ;;
        3)
-        powerprofilesctl set performance
+        sudo powerprofilesctl set performance
         echo "Switched to Performance."
         ;;
        4)
