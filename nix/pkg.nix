@@ -7,6 +7,8 @@ environment.systemPackages = with pkgs; [
   btop
   ntfs3g
   git
+  tailscale
+  podman
   #nginx
   
   sqld
