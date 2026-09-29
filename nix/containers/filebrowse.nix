@@ -1,3 +1,5 @@
+{ pkgs, lib, inputs, ... }: 
+
 {
   virtualisation.podman.enable = true;
 
@@ -5,7 +7,7 @@
     backend = "podman";
 
     containers.filebrowser = {
-      image = "filebrowser:latest";
+      image = "docker.io/filebrowser/filebrowser:latest";
 
       ports = [
         "8080:80"

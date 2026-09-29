@@ -11,7 +11,6 @@ environment.systemPackages = with pkgs; [
   podman
   #nginx
   
-  sqld
   python3
  ];
 }
