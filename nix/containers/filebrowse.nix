@@ -9,9 +9,9 @@
     containers.filebrowser = {
       image = "docker.io/filebrowser/filebrowser:latest";
 
-      ports = [
-        "8080:80"
-      ];
+     ports = [
+      "8080:80"
+     ];
 
       volumes = [
         "/var/lib/filebrowser/srv:/srv"
@@ -22,13 +22,15 @@
         "--address"
         "0.0.0.0"
         "--port"
-        "80"
+        "8080"
         "--root"
         "/srv"
         "--database"
         "/database/filebrowser.db"
       ];
     };
+
+	
   };
 }
 
