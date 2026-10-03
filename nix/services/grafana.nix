@@ -2,7 +2,7 @@
 with lib;
 
 {
-  services.uptime-kuma = {
+  services.grafana = {
     enable = true;
     settings = {
       PORT = "3008";
@@ -10,4 +10,3 @@ with lib;
     };
   };
 }
-

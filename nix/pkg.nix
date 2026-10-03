@@ -12,5 +12,7 @@ environment.systemPackages = with pkgs; [
   #nginx
   
   python3
+  rclone
+  rsync
  ];
 }

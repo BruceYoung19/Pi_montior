@@ -28,7 +28,6 @@
       		      ./configuration.nix
 		      ./services/active-services.nix
 		      ./cookbook/books.nix
-		      #./docker/docker.nix 
 		      ./containers/filebrowse.nix
                 ];
         };};};
