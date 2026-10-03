@@ -5,8 +5,9 @@
   imports = [
 	./microbin.nix
   	./tailscale.nix
-	#./uptime-kuma.nix
-	./grafana.nix
+	./uptime-kuma.nix
+	#./grafana.nix
+	./homer.nix
 	];
 
 }
