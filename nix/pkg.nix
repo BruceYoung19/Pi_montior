@@ -14,5 +14,6 @@ environment.systemPackages = with pkgs; [
   python3
   rclone
   rsync
+  restic
  ];
 }

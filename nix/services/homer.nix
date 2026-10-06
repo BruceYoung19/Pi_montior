@@ -10,10 +10,6 @@
       header = true;
       footer = "Powered by NixOS";
       
-      services = [
-        {
-        };
-      ];
     };
   };
 }

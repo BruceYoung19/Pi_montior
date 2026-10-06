@@ -7,7 +7,7 @@
   	./tailscale.nix
 	./uptime-kuma.nix
 	#./grafana.nix
-	./homer.nix
+	#./homer.nix
 	];
 
 }

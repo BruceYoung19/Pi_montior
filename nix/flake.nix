@@ -28,7 +28,7 @@
       		      ./configuration.nix
 		      ./services/active-services.nix
 		      ./cookbook/books.nix
-		      ./containers/filebrowse.nix
+		      ./podman/podman.nix
                 ];
         };};};
 }
