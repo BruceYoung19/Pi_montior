@@ -9,6 +9,7 @@ environment.systemPackages = with pkgs; [
   git
   tailscale
   podman
+  podman-compose
   #nginx
   
   python3

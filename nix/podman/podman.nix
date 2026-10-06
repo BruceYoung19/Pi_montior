@@ -1,5 +1,5 @@
 { pkgs, lib, inputs, ... }: 
-
+{
 virtualisation.podman = {
   enable = true;
   dockerCompat = true; 
@@ -11,3 +11,4 @@ users.users.bserver = {
     "podman"
   ];
 };
+}
