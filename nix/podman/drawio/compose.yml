@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  drawio:
+    image: docker.io/jgraph/drawio:latest
+    container_name: drawio
+    ports:
+      - "5687:8080"
+      - "8443:8443"
+    environment:
+      - DRAWIO_SELF_CONTAINED=1
+    restart: unless-stopped
