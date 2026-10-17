@@ -7,9 +7,8 @@ The intial point of this project was to use a raspberry pi to host a server. How
 ## 📌 Project Goals
 
 * 📈 Track active scripts and server status.
-* 🐳 Use **Docker** for containerization.
-* 🌐 Host via a local server managed by **Nginx**.
-
+* 🐳 Use **Podman** for containerization.
+* Backing up Paperless with **Restic**
 ---
 
 ## 🧰 Tech Stack
@@ -36,6 +35,7 @@ The intial point of this project was to use a raspberry pi to host a server. How
 ---
 
 ## Next Step:
-- Mix these services with some cloud services like Cloudflare or AWS.
-
-
+- Using nix to reproduce containers
+- Expanding to using VM's within Nix os.
+- implementing secrets
+- Backing up scripts (**Bash**) 
