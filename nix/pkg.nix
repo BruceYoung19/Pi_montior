@@ -7,9 +7,14 @@ environment.systemPackages = with pkgs; [
   btop
   ntfs3g
   git
+  tailscale
+  podman
+  podman-compose
   #nginx
   
-  sqld
   python3
+  rclone
+  rsync
+  restic
  ];
 }

@@ -12,7 +12,6 @@
         pkgs = nixpkgs.legacyPackages.${system};
   
   in {
-  # Docker Shell
 	devShells.${system}.default = pkgs.mkShell {
       	packages = with pkgs; [
         	docker
@@ -29,7 +28,7 @@
       		      ./configuration.nix
 		      ./services/active-services.nix
 		      ./cookbook/books.nix
-		      ./docker/docker.nix 
+		      ./podman/podman.nix
                 ];
         };};};
 }
