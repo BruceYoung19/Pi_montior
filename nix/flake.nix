@@ -29,6 +29,7 @@
 		      ./services/active-services.nix
 		      ./cookbook/books.nix
 		      ./podman/podman.nix
+		      ./incus/incus.nix
                 ];
         };};};
 }
