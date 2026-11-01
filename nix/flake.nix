@@ -3,22 +3,21 @@
 
   inputs = {
         nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+	
+	# ====================== incus compose
+	incus-compose = {
+     		url = "github:lxc/incus-compose" ;
+		inputs.nixpkgs.follows = "nixpkgs";
+	};
    };
 
-  outputs = { self, nixpkgs }@inputs:
+  outputs = { self, nixpkgs,incus-compose }@inputs:
   
   let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
   
-  in {
-	devShells.${system}.default = pkgs.mkShell {
-      	packages = with pkgs; [
-        	docker
-        	docker-compose
-        	curl
-      	];
-    };
+  in { 
   # for my main os
   nixosConfigurations = {
         # Home server
@@ -29,6 +28,7 @@
 		      ./services/active-services.nix
 		      ./cookbook/books.nix
 		      ./podman/podman.nix
+		      ./incus/incus.nix
                 ];
         };};};
 }
