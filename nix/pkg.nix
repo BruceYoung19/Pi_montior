@@ -7,10 +7,14 @@ environment.systemPackages = with pkgs; [
   btop
   ntfs3g
   git
+  curl
   tailscale
   podman
   podman-compose
+  incus-ui-canonical
   #nginx
+  incus-compose
+  opentofu
   
   python3
   rclone

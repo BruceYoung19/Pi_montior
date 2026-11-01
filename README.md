@@ -7,7 +7,7 @@ The intial point of this project was to use a raspberry pi to host a server. How
 ## 📌 Project Goals
 
 * 📈 Track active scripts and server status.
-* 🐳 Use **Podman** for containerization.
+* 🐳 Use **Incus** for containerization.
 * Backing up Paperless with **Restic**
 ---
 
@@ -35,7 +35,5 @@ The intial point of this project was to use a raspberry pi to host a server. How
 ---
 
 ## Next Step:
-- Using nix to reproduce containers
-- Expanding to using VM's within Nix os.
 - implementing secrets
 - Backing up scripts (**Bash**) 
